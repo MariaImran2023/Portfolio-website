@@ -26,3 +26,6 @@ Before running the project, you need to set up your environment variables. Follo
 
 6. **Open Your Browser:**
 Visit http://localhost:3000 to view your project.
+   
+
+
