@@ -1,0 +1,20 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 20px #02435f, 0 -4px 20px #02435f, 4px 0 20px #02435f, -4px 0 20px #02435f;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
