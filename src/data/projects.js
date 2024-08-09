@@ -24,7 +24,7 @@ export const PROJECTS = [
       image: port,
       description: "This personal portfolio website is designed to showcase my experience, skills, projects, and contact information. It features a well-organized layout that highlights my professional journey, technical expertise, and key projects.",
       technologies: ["HTML", "Tailwind CSS", "React JS", "JavaScript"],
-      github: "https://github.com/your-username/portfolio-website"
+      github: "https://github.com/MariaImran2023/Portfolio-website"
     },
     {
       title: "RESTful API Integration",

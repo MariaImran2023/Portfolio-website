@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi'; 
 
@@ -10,18 +10,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" relative mb-10 flex items-center justify-between py-6 px-6 lg:px-10">
+    <nav className="relative mb-10 flex items-center justify-between py-6 px-6 lg:px-10">
       <div className="flex items-center">
         <h2 className="text-2xl md:text-3xl">Portfolio</h2>
       </div>
 
-      <div className="md:hidden flex items-center">
+      {/* Hamburger menu button for small and medium screens */}
+      <div className="flex items-center lg:hidden">
         <button onClick={toggleMenu} className="text-2xl focus:outline-none">
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
 
-      <div className={`absolute top-16 right-0 w-1/2 bg-slate-950 text-white md:hidden ${isOpen ? 'block' : 'hidden'} shadow-lg`}>
+      {/* Dropdown menu for small screens */}
+      <div className={`absolute top-16 right-0 w-1/2 bg-slate-950 text-white lg:hidden ${isOpen ? 'block' : 'hidden'} shadow-lg`}>
         <div className="flex flex-col items-center gap-4 p-4 text-sm md:text-lg">
           <a href="#About" className="hover:text-blue-400">About</a>
           <a href="#Technology" className="hover:text-blue-400">Technologies</a>
@@ -40,7 +42,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden md:flex items-center gap-8">
+      {/* Navbar links and icons for large screens */}
+      <div className="hidden lg:flex items-center gap-8">
         <div className="flex items-center gap-2 lg:gap-6 pl-3 text-sm md:text-lg">
           <a href="#About" className="hover:text-blue-400">About</a>
           <a href="#Technology" className="hover:text-blue-400">Technologies</a>
