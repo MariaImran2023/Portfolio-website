@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { PROJECTS } from '../data/projects';
 import {motion} from "framer-motion"
 
@@ -29,9 +29,24 @@ const Projects = () => {
               <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 1}} className="w-full lg:max-w-2xl lg:w-3/4 flex flex-col items-center lg:items-start">
                 <div className='flex items-center'>
                   <h6 className='mb-2 font-semibold mr-4'>{project.title}</h6>
-                  <a href={project.github}  target='_blank' rel='noopener noreferrer' className='mb-2.5 flex hover:scale-150 transform transition-transform duration-300' >
-                    <FaGithub  size={20} className='text-blue-300' />
-                  </a>
+                  <div className='flex space-x-4'>
+                    {project.github && (
+                      <a href={Array.isArray(project.github) ? project.github[0] : project.github}  
+                         target='_blank' 
+                         rel='noopener noreferrer' 
+                         className='mb-2.5 flex hover:scale-150 transform transition-transform duration-300'>
+                        <FaGithub size={20} className='text-blue-300' />
+                      </a>
+                    )}
+                    {project.live && (
+                      <a href={Array.isArray(project.live) ? project.live[0] : project.live}  
+                         target='_blank' 
+                         rel='noopener noreferrer' 
+                         className='mb-2.5 flex hover:scale-150 transform transition-transform duration-300'>
+                        <FaExternalLinkAlt size={20} className='text-blue-300' />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <p className='mb-4 text-neutral-400'>{project.description}</p>
                 <div className="flex flex-wrap">

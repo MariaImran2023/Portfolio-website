@@ -18,14 +18,13 @@ const Intro = () => {
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left"> 
               <motion.h1 variants={container(0)} initial='hidden' animate='visible' className="text-4xl md:text-6xl lg:text-8xl tracking-tight lg:mt-20">Maria Imran</motion.h1>
 
-              <motion.span variants={container(0.5)} initial='hidden' animate='visible' className="my-3 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl md:text-6xl tracking-tight text-transparent">
-                Front-End Developer
+              <motion.span variants={container(0.5)} initial='hidden' animate='visible' className="my-3 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl md:text-5xl tracking-tight text-transparent">
+                Full-Stack Web Developer | UI Designer | ML Enthusiast
               </motion.span>
 
               <motion.p variants={container(1)} initial='hidden' animate='visible' className="my-2 max-w-2xl lg:text-xl py-6 font-light">
-                Hi, I’m a front-end developer with a passion for creating visually stunning and user-friendly websites. Currently, I’m exploring the latest in React and working on enhancing my skills in modern web technologies.
+                Hi, I’m a passionate web developer who blends creative front-end design with powerful back-end logic. While I specialize in building visually stunning and user-friendly interfaces using React, I also integrate Python-based back-end systems using Flask, and have hands-on experience with machine learning models. I love crafting seamless web apps that are not just beautiful but also intelligent and scalable.          
               </motion.p>
-
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center items-center">

@@ -7,8 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        customColor: '#6534bf' 
-      }
+        customColor: '#6534bf',
+      },
+      spacing: {
+        '18': '4.5rem', 
+      },
     },
   },
   plugins: [],
